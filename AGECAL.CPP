@@ -1,7 +1,8 @@
+// to calculate the age of the person from his/her date of birth
 #include<iostream.h>
 #include<conio.h>
 #include<stdlib.h>
-int AgeCal(int bd, int bm, int by, int cd, int cm, int cy);
+int AgeCal(int bd, int bm, int by, int cd, int cm, int cy);                     // function declaration 
 int main()
 {
 	int bd, bm, by, cd, cm, cy;
@@ -12,15 +13,15 @@ int main()
 	cin>>cd>>cm>>cy;
 	cout<<"\nyour DOB: "<<bd<<"/"<<bm<<"/"<<by;
 	cout<<"\npresent date: "<<cd<<"/"<<cm<<"/"<<cy;
-	AgeCal(bd, bm, by, cd, cm, cy);
-	getch();
+	AgeCal(bd, bm, by, cd, cm, cy);                                           //calling function 
+ 	getch();
 	return 0;
 }
 int AgeCal(int bd, int bm, int by, int cd, int cm, int cy)
 {
-	int month[]= {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	int month[]= {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};           // no. of days in month  of year
 	if(bd > cd)
-	{
+	{                                                                         
 		 if(cy%4==0 && bm==2 && cm==3)
 		{
 			cd= (1+ cd) + month[bm-1];
