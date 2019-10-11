@@ -7,7 +7,7 @@ int main()
 {
 	int bd, bm, by, cd, cm, cy;
 	clrscr();
-	cout<<"enter your date of birth: dd/"<<"mm/"<<"yyyy";
+	cout<<"enter your date of birth: dd/mm/yyyy" ;
 	cin>>bd>>bm>>by;
 	cout<<"\nenter current date: dd/"<<"mm/"<<"yyyy";
 	cin>>cd>>cm>>cy;
